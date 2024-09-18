@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval Prediction</title>
+</head>
+<body>
+    <h1>Loan Approval Prediction</h1>
+    <form action="/predict" method="POST">
+        <label for="no_of_dependents">Number of Dependents:</label>
+        <input type="number" id="no_of_dependents" name="no_of_dependents" min="0" max="5" value="0"><br><br>
+
+        <label for="education">Education:</label>
+        <select id="education" name="education">
+            <option value="Graduate" selected>Graduate</option>
+            <option value="Not Graduate">Not Graduate</option>
+        </select><br><br>
+
+        <label for="self_employed">Self Employed:</label>
+        <select id="self_employed" name="self_employed">
+            <option value="Yes">Yes</option>
+            <option value="No" selected>No</option>
+        </select><br><br>
+
+        <label for="City">City:</label>
+        <select id="City" name="City">
+            <option value="Ankara">Ankara</option>
+            <option value="Bursa">Bursa</option>
+            <option value="Erzurum">Erzurum</option>
+            <option value="Istanbul" selected>Istanbul</option>
+            <option value="Izmir">Izmir</option>
+        </select><br><br>
+
+        <label for="income_annum">Annual Income:</label>
+        <input type="number" id="income_annum" name="income_annum" value="500000"><br><br>
+
+        <label for="loan_amount">Loan Amount:</label>
+        <input type="number" id="loan_amount" name="loan_amount" value="300000"><br><br>
+
+        <label for="loan_term">Loan Term (years):</label>
+        <input type="number" id="loan_term" name="loan_term" value="10"><br><br>
+
+        <label for="cibil_score">CIBIL Score:</label>
+        <input type="number" id="cibil_score" name="cibil_score" min="300" max="900" value="750"><br><br>
+
+        <label for="residential_assets_value">Residential Assets Value:</label>
+        <input type="number" id="residential_assets_value" name="residential_assets_value" value="100000"><br><br>
+
+        <label for="commercial_assets_value">Commercial Assets Value:</label>
+        <input type="number" id="commercial_assets_value" name="commercial_assets_value" value="50000"><br><br>
+
+        <label for="luxury_assets_value">Luxury Assets Value:</label>
+        <input type="number" id="luxury_assets_value" name="luxury_assets_value" value="30000"><br><br>
+
+        <label for="bank_asset_value">Bank Asset Value:</label>
+        <input type="number" id="bank_asset_value" name="bank_asset_value" value="40000"><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
