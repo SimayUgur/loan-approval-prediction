@@ -2,21 +2,31 @@
 
 This project is a Flask-based API that predicts loan approval status based on client financial data. It allows users to submit financial data via a web form or programmatically via a POST request, and returns whether a loan will be approved or rejected. The application is packaged using Docker for easy deployment.
 
+
+## Directory Structure
 ## Directory Structure
 
-loan-approval-api/
+```plaintext
+C:.
+│   app.py
+│   app_s.py
+│   Dockerfile
+│   LICENSE
+│   loan.ipynb
+│   loan_approval_dataset_updated.csv
+│   loan_approval_model.pkl
+│   rb_scaler.pkl
+│   README.md
+│   requirements.txt
+│   scaler.pkl
 │
-├── app.py               # Main Flask application
-├── loan_approval_model.pkl  # Pre-trained XGBoost model file
-├── rb_scaler.pkl        # Scaler used for feature scaling
-├── requirements.txt     # Python dependencies
-├── Dockerfile           # Docker build configuration
-├── templates/           # HTML templates for Flask (index.html and result.html)
-│   ├── index.html       # Home page with form for data entry
-│   └── result.html      # Result page showing prediction
-├── static/              # Static assets (CSS, JS, etc.)
-├── README.md            # Project documentation (this file)
-└── app.log              # Log file for recording application events
+├───.ipynb_checkpoints
+│       loan-checkpoint.ipynb
+│       Loan_Eligibility_Prediction_using_Gradient_Boosting_Classifier_prediction-checkpoint.ipynb
+│
+└───templates
+        index.html
+        result.html
 
 
 
