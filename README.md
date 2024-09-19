@@ -3,6 +3,7 @@
 This project is a Flask-based API that predicts loan approval status based on client financial data. It allows users to submit financial data via a web form or programmatically via a POST request, and returns whether a loan will be approved or rejected. The application is packaged using Docker for easy deployment.
 
 ## Directory Structure
+
 loan-approval-api/
 │
 ├── app.py               # Main Flask application
